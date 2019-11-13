@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>result</title>
+  <link rel="stylesheet" href="/static/style.css" type="text/css">
+  <style>
+    td{
+      background-color:azure;
+    }
+    div{
+      width: 80%;
+      background-color:#ff0066;
+      color: #FFF;
+    }
+  </style>
+</head>
+
+<body><center>
+  <div>
+    <h1>Analyser Dashboard</h1>
+  </div>
+  </center>
+
+  <br>
+  <center>
+      <img width="80%" height="30%" src="{{url_for('static', filename='final.png')}}"/>
+    </center>
+    <br/><br/>
+  <table width="100%">
+    <tr>
+        <td width="1%"></td>
+      <td width="34%">
+        <tweet>
+            <b>First Five Positive Tweets</b>
+            {% for tweet in poslist %}
+            <li>{{tweet.text}}</li>
+            {% endfor %}
+        </tweet>
+      </td>
+      <td width="30%">
+        <center>
+              <b>Detailed report</b><br/>
+              {{t4}}<br>
+              {{t5}}<br>
+              {{t6}}<br>
+              {{t7}}<br>
+              {{t8}}<br>
+              {{t9}}<br>
+              {{t10}}<br>
+              <br>
+              <b>General report</b><br/>
+              {{t12}}
+        </center>
+      </td>
+      <td width="1%"></td>
+      <td width="34%">
+        <tweet>
+            <b>First Five Negative Tweets</b>
+            {% for tweet in neglist %}
+            <li>{{tweet.text}}</li>
+            {% endfor %}
+        </tweet>
+      </td>
+    </tr>
+  </table>
+    
+    
+</body>
+</html>
+

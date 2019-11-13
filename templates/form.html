@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+    <body>
+        <link rel="stylesheet" href="/static/style.css" type="text/css">
+
+<form action="/process" method="POST">
+	<div class="login">
+		<div class="login-screen">
+			<div class="app-title">
+				<h1>Tweet Analyzer</h1>
+			</div>
+
+			<div class="login-form">
+				<div class="control-group">
+					<input type="text" class="login-field" value="" placeholder="Search Query" name="search_query">
+					<label class="login-field-icon fui-user" for="login-name"></label>
+				</div>
+
+				<div class="control-group">
+					<input type="text" class="login-field" value="" placeholder="Max Tweets" name="max_tweets">
+					<label class="login-field-icon fui-lock" for="login-pass"></label>
+				</div>
+
+				<input type="submit" value="Submit" class="btn btn-primary btn-large btn-block" >
+				<br>
+			</div>
+		</div>
+	</div>
+</form>
+    </body>
+</html>
