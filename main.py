@@ -28,10 +28,10 @@ def DownloadData():
     tweets = []
     tweetText = []
     # authenticating
-    consumerKey = 'heuaCDZJKfqi06JMB6aGGztSi'
-    consumerSecret = 'JMJJ3JMzCzjMqXgE1i75x9rEMTIIFtSDoZEMVqTWTgzZh2Jn31'
-    accessToken = '1027585656896147458-gNOwPZX0p9KKr9sFQYJoCwgSlcssh2'
-    accessTokenSecret = '4GTxAn8UelzH9btznHM0fdP2riuFlfsPV9jDRZfNoJIyD'
+    consumerKey = '***'
+    consumerSecret = '***'
+    accessToken = '***'
+    accessTokenSecret = '****'
     auth = tweepy.OAuthHandler(consumerKey, consumerSecret)
     auth.set_access_token(accessToken, accessTokenSecret)
     api = tweepy.API(auth)
